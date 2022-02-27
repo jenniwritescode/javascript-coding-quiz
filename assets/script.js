@@ -12,7 +12,7 @@
 
 
 
-// Declare list of questions
+// Declare list of quiz questions
 const questions = [
   {
     question: "1. How do you declare a Javascript variable?",
@@ -240,7 +240,7 @@ function gameOver() {
 function storeHighScores(event) {
   event.preventDefault();
 
-  // Exit Function if blank
+  // Exit function if blank
   if (initialsInput.value === "") {
     alert("Enter your initials:");
     return;
@@ -325,8 +325,10 @@ backButton.addEventListener("click", function () {
   highScoreSection.style.display = "none";
 });
 
+// Clear high scores when user presses the "Clear High Scores" button
 clearButton.addEventListener("click", function () {
   window.localStorage.removeItem("high scores");
+  // alert user when high scores have been cleared"
   alert("High scores cleared!");
   listOfHighScores.innerHTML = "";
   listOfHighScores.setAttribute(

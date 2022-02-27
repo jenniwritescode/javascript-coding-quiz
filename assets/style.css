@@ -33,7 +33,7 @@ nav {
     text-align: center;
 }
 
-h1
+h1, 
 h2 {
     color: var(--headingColor);
     font-weight: bold;
@@ -55,7 +55,9 @@ a:hover {
     color: #FEAFF2;
 }
 
-.btn:focus, .btn:active, .btn:visited {
+.btn:focus, 
+.btn:active, 
+.btn:visited {
     background-color: var(--buttonColor);
     cursor: var(--cursorStyle);
 }

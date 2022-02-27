@@ -1,0 +1,88 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+:root {
+    --buttonColor: #CA42B5;
+    --textColor: #ffffff;
+    --headingColor: #000000;
+    --cursorStyle: pointer;
+    --fontSizeStd: 20px;
+}
+
+nav {
+    position: relative;
+    top: 1;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.quizMain {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 24px;
+}
+
+.start {
+    text-align: center;
+}
+
+h1
+h2 {
+    color: var(--headingColor);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.start-quiz-button {
+    background-color: var(--buttonColor);
+    color: var(--textColor);
+    font-size: var(--fontSizeStd);
+    cursor: var(--cursorStyle);
+}
+
+a {
+    color: var(--buttonColor);
+}
+
+a:hover {
+    color: #FEAFF2;
+}
+
+.btn:focus, .btn:active, .btn:visited {
+    background-color: var(--buttonColor);
+    cursor: var(--cursorStyle);
+}
+
+.initialsInput {
+    font-size: var(--fontSizeStd);
+}
+
+.buttonStyle,
+.submitInitialsBtn,
+.backButton,
+.clearButton {
+    background-color: var(--buttonColor);
+    color: var(--textColor);
+    font-size: var(--fontSizeStd);
+    cursor: var(--cursorStyle);
+}
+
+#finalScore {
+    font-weight: bold;
+}
+
+#questionTitle {
+    font-size: 20px;
+}
+
+#answerCheck {
+    font-style: italic;
+    color: var(--headingColor);
+}
